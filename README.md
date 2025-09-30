@@ -77,6 +77,30 @@ The regression model achieved a high R² score, indicating a good fit.
 
 Recommendation: The company should prioritize improving the mobile app experience.
 
+Why EDA Alone Was Not Enough:
+
+During the exploratory data analysis (EDA), scatterplots and correlation heatmaps suggested that Time on App has a stronger relationship with Yearly Amount Spent compared to Time on Website.
+
+While this gave us an initial intuition, relying only on visual patterns has limitations:
+
+EDA is qualitative → it shows patterns, but not the exact strength of influence.
+
+Possible bias → human judgment can misinterpret correlations.
+
+No metrics → EDA cannot provide error rates (MSE, RMSE) or model performance (R²).
+
+Why Linear Regression Was Needed:
+
+By applying Linear Regression, we obtained:
+
+Quantitative coefficients → showing exactly how much each feature contributes to yearly spending.
+
+Evaluation metrics → ensuring the model fits the data well.
+
+Data-driven insights → a more reliable basis for business decisions.
+
+Therefore, while EDA suggested the app was more important, Linear Regression confirmed and quantified this insight, making the recommendation trustworthy for stakeholders.
+
 Conclusion:
 
 This project demonstrates how Linear Regression and evaluation metrics can guide business strategy.
